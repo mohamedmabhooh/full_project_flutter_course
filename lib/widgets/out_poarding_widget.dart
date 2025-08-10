@@ -26,7 +26,7 @@ class out_poarding_widget extends StatelessWidget {
             style: GoogleFonts.cairo(
                 textStyle: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 18
+                    fontSize:13
                 )
             ),),
         ),

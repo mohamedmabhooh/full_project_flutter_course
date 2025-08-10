@@ -72,11 +72,11 @@ class _out_poardingState extends State<out_poarding> {
             // scrollDirection: Axis.vertical,
              children: [
              out_poarding_widget(image: 'images/undraw_education_f8ru.png',ontap: (){},
-             text: 'jhfjhfjhfjhfjf',),
+             text: 'لان اكون ديل في الحق خيرا من ان اكون راسا في الباطل ',),
              out_poarding_widget(image: 'images/undraw_certificate_re_yadi.png',ontap: (){}
-             ,text: '',),
+             ,text: 'يا عزة النفس كوني في العلى قمرا *** فالعش دونك مثل الغصن ان مالا \nما قيمة المراء ان ضاعت كرمته *** فضل الكرمة يعلو الجاه والمالا',),
              out_poarding_widget(image: 'images/undraw_educator_re_ju47 .png',ontap: (){},
-             text: '',)
+             text: 'اتبع سبل الهدى و لا يضيرك قلة السالكين \nواترسب الضلالة و لا يغرك كثرة الهالكين ',)
            
              ],
            ),
