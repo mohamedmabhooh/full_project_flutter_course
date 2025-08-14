@@ -69,9 +69,12 @@ class _out_poardingState extends State<out_poarding> {
            
             //  print(_currentpage);
             },
+
             // scrollDirection: Axis.vertical,
              children: [
+
              out_poarding_widget(image: 'images/undraw_education_f8ru.png',ontap: (){},
+
              text: 'لان اكون ديل في الحق خيرا من ان اكون راسا في الباطل ',),
              out_poarding_widget(image: 'images/undraw_certificate_re_yadi.png',ontap: (){}
              ,text: 'يا عزة النفس كوني في العلى قمرا *** فالعش دونك مثل الغصن ان مالا \nما قيمة المراء ان ضاعت كرمته *** فضل الكرمة يعلو الجاه والمالا',),
@@ -166,7 +169,7 @@ class _out_poardingState extends State<out_poarding> {
                InkWell(
           onTap:(){
             if(_currentpage==2){
-            //  Navigator.pushNamed(context, '/counter');
+           Navigator.pushNamed(context, '/login');
             }
             _pageController.nextPage(duration: Duration(seconds:1 ), curve: Curves.fastOutSlowIn);
 
