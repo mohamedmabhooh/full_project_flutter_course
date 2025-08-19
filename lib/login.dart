@@ -42,165 +42,167 @@ class _loginState extends State<login> {
              ]
          )
        ),
-       child: Column(
-       crossAxisAlignment: CrossAxisAlignment.center,
-         children: [
-        SizedBox(width: double.infinity,),
-           SizedBox(height: 90,),
-           Image.asset('images/Group_513-removebg-preview.png'),
-           SizedBox(height: 30,),
-           Text('مرحبًا بك مرة أخرى ، قم بتسجيل ',
-             style: GoogleFonts.cairo(
-             textStyle: TextStyle(
-               fontSize: 16,
-               fontWeight: FontWeight.bold
-             )
-           ),),
-           Text(' الدخول للمتابعة مع',style: GoogleFonts.cairo(
-           textStyle: TextStyle(
-           fontSize: 16,
-               fontWeight: FontWeight.bold
-           )
-     ),),
-           Text('تطبيق آفاق',style: GoogleFonts.cairo(
-            textStyle: TextStyle(
-               fontSize: 16,
-    fontWeight: FontWeight.bold
-    )
-    ),),
-           SizedBox(height: 30,),
-           Container(
-         width: 390,
-             decoration: BoxDecoration(
-               borderRadius: BorderRadius.all(Radius.circular(15)),
-               border: Border.all(color: Color(0xffC7C7C7),width: 2)
-             ),
-             child: Column(
-               children: [
-                 TextField(
-                   controller: _textEditingController,
-                   style: GoogleFonts.cairo(
-                  textStyle: TextStyle(
-                 fontSize: 14,
-                 color: Color(0xff273262)
+       child: SingleChildScrollView(
+         child: Column(
+         crossAxisAlignment: CrossAxisAlignment.center,
+           children: [
+          SizedBox(width: double.infinity,),
+             SizedBox(height: 90,),
+             Image.asset('images/Group_513-removebg-preview.png'),
+             SizedBox(height: 30,),
+             Text('مرحبًا بك مرة أخرى ، قم بتسجيل ',
+               style: GoogleFonts.cairo(
+               textStyle: TextStyle(
+                 fontSize: 16,
+                 fontWeight: FontWeight.bold
+               )
              ),),
-                   textDirection: TextDirection.rtl,
-                   keyboardType: TextInputType.emailAddress,
-                   decoration: InputDecoration(
-
-                    contentPadding: EdgeInsets.symmetric(horizontal: 24),
-                     hintTextDirection: TextDirection.rtl,
-
-                     hintText: 'البريد الالكتروني',
-                     helperText: this.helperText_emil,
-                       helperStyle: GoogleFonts.cairo(
-                           textStyle: TextStyle(
-                               fontSize: 14,
-                               color: Colors.red
-                           )
-                       ),
-                     hintStyle:GoogleFonts.cairo(
-                       textStyle: TextStyle(
-                         fontSize: 14,
-                         color: Color(0xff273262)
-                       )
-                     ),
-                     border: InputBorder.none
-                   ),
-                 ),
-                 Divider(
-                   endIndent: 24,
-                   indent: 24,
-                   thickness: 3,
-                 ),
-                 TextField(
-                   controller: _textEditingController2,
-                   style: GoogleFonts.cairo(
-                     textStyle: TextStyle(
-                         fontSize: 14,
-                         color: Color(0xff273262)
-                     ),),
-                   textDirection: TextDirection.rtl,
-                   keyboardType: TextInputType.emailAddress,
-                   decoration: InputDecoration(
-
-                       contentPadding: EdgeInsets.symmetric(horizontal: 24),
+             Text(' الدخول للمتابعة مع',style: GoogleFonts.cairo(
+             textStyle: TextStyle(
+             fontSize: 16,
+                 fontWeight: FontWeight.bold
+             )
+              ),),
+             Text('تطبيق آفاق',style: GoogleFonts.cairo(
+              textStyle: TextStyle(
+                 fontSize: 16,
+             fontWeight: FontWeight.bold
+             )
+             ),),
+             SizedBox(height: 30,),
+             Container(
+           width: 390,
+               decoration: BoxDecoration(
+                 borderRadius: BorderRadius.all(Radius.circular(15)),
+                 border: Border.all(color: Color(0xffC7C7C7),width: 2)
+               ),
+               child: Column(
+                 children: [
+                   TextField(
+                     controller: _textEditingController,
+                     style: GoogleFonts.cairo(
+                    textStyle: TextStyle(
+                   fontSize: 14,
+                   color: Color(0xff273262)
+               ),),
+                     textDirection: TextDirection.rtl,
+                     keyboardType: TextInputType.emailAddress,
+                     decoration: InputDecoration(
+         
+                      contentPadding: EdgeInsets.symmetric(horizontal: 24),
                        hintTextDirection: TextDirection.rtl,
-                       helperText: this.helperText_password,
-                       helperStyle: GoogleFonts.cairo(
+         
+                       hintText: 'البريد الالكتروني',
+                       helperText: this.helperText_emil,
+                         helperStyle: GoogleFonts.cairo(
+                             textStyle: TextStyle(
+                                 fontSize: 14,
+                                 color: Colors.red
+                             )
+                         ),
+                       hintStyle:GoogleFonts.cairo(
                          textStyle: TextStyle(
                            fontSize: 14,
-                           color: Colors.red
+                           color: Color(0xff273262)
                          )
                        ),
-                       hintText: 'كلمة المرور',
-                       hintStyle:GoogleFonts.cairo(
-                           textStyle: TextStyle(
-                               fontSize: 14,
-                               color: Color(0xff273262)
-                           )
-                       ),
                        border: InputBorder.none
+                     ),
                    ),
-                 ),
-               ],
+                   Divider(
+                     endIndent: 24,
+                     indent: 24,
+                     thickness: 3,
+                   ),
+                   TextField(
+                     controller: _textEditingController2,
+                     style: GoogleFonts.cairo(
+                       textStyle: TextStyle(
+                           fontSize: 14,
+                           color: Color(0xff273262)
+                       ),),
+                     textDirection: TextDirection.rtl,
+                     keyboardType: TextInputType.emailAddress,
+                     decoration: InputDecoration(
+         
+                         contentPadding: EdgeInsets.symmetric(horizontal: 24),
+                         hintTextDirection: TextDirection.rtl,
+                         helperText: this.helperText_password,
+                         helperStyle: GoogleFonts.cairo(
+                           textStyle: TextStyle(
+                             fontSize: 14,
+                             color: Colors.red
+                           )
+                         ),
+                         hintText: 'كلمة المرور',
+                         hintStyle:GoogleFonts.cairo(
+                             textStyle: TextStyle(
+                                 fontSize: 14,
+                                 color: Color(0xff273262)
+                             )
+                         ),
+                         border: InputBorder.none
+                     ),
+                   ),
+                 ],
+               ),
              ),
-           ),
-           SizedBox(height: 6,),
-           Row(
-
-             children: [
-             Spacer(flex: 1,),
-             InkWell(
-               onTap: (){},
-               child: Text('نسيت كلمة المرور',style: GoogleFonts.cairo(
-                 textStyle: TextStyle(
-                   fontSize: 14,
-                   color: Color(0xff707070),
-                   decoration: TextDecoration.underline,
-
-
-                 )
-               )),
-             ),
-             Spacer(flex: 5,),
-           ],),
-          SizedBox(height: 18,),
-          InkWell(
-            onTap: (){
-         // Navigator.pushNamed(context, '/home_screen');
-            text_data();
-            },
-            child: Container(
-              width: 225,
-              height: 50,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Color(0xffFF657F)
-              ),
-              child: Center(
-                child: Text('دخول',style: GoogleFonts.cairo(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold
-                ),),
+             SizedBox(height: 6,),
+             Row(
+         
+               children: [
+               Spacer(flex: 1,),
+               InkWell(
+                 onTap: (){},
+                 child: Text('نسيت كلمة المرور',style: GoogleFonts.cairo(
+                   textStyle: TextStyle(
+                     fontSize: 14,
+                     color: Color(0xff707070),
+                     decoration: TextDecoration.underline,
+         
+         
+                   )
+                 )),
+               ),
+               Spacer(flex: 5,),
+             ],),
+            SizedBox(height: 18,),
+            InkWell(
+              onTap: (){
+            Navigator.pushNamed(context, '/home_screen');
+             // text_data();
+              },
+              child: Container(
+                width: 225,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Color(0xffFF657F)
+                ),
+                child: Center(
+                  child: Text('دخول',style: GoogleFonts.cairo(
+                    fontSize: 16,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold
+                  ),),
+                ),
               ),
             ),
-          ),
-       SizedBox(height: 120,),
-
-       Text('ليس لدي حساب؟',style: GoogleFonts.cairo(
-         textStyle: TextStyle(
-           color: Color(0xff707070),
+         SizedBox(height: 120,),
+         
+         Text('ليس لدي حساب؟',style: GoogleFonts.cairo(
+           textStyle: TextStyle(
+             color: Color(0xff707070),
+             fontSize: 14
+           )
+         ),),
+         Text('تسجيل',style: GoogleFonts.cairo(
+           color: Color(0xff273262),
+           fontWeight: FontWeight.bold,
            fontSize: 14
-         )
-       ),),
-       Text('تسجيل',style: GoogleFonts.cairo(
-         color: Color(0xff273262),
-         fontWeight: FontWeight.bold,
-         fontSize: 14
-       ),),
-         ],
+         ),),
+           ],
+         ),
        )
 
        /* Center(
